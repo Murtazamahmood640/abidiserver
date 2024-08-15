@@ -1511,8 +1511,8 @@ app.post("/checkout", async (req, res) => {
         },
       ],
       mode: "payment",
-      success_url: "http://localhost:3001/HomePage",
-      cancel_url: "http://localhost:3001/404",
+      success_url: "https://hr-backend-seven.vercel.appHomePage",
+      cancel_url: "https://hr-backend-seven.vercel.app/404",
     })
   } catch (err) {
     console.log(err);
@@ -1567,8 +1567,8 @@ app.post('/create-checkout-session', async (req, res) => {
         },
       ],
       mode: 'payment',
-      success_url: 'http://localhost:3001/success',
-      cancel_url: 'http://localhost:3001/fail',
+      success_url: 'https://hr-backend-seven.vercel.app/success',
+      cancel_url: 'https://hr-backend-seven.vercel.app/fail',
     });
 
     res.json({ id: session.id });
